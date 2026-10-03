@@ -289,11 +289,16 @@ p {
   border-radius: 28px;
   padding: 36px;
   box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(23, 195, 178, 0.15);
+  max-width: 340px;
+  width: 100%;
+  justify-self: center;
 }
 
 .hero-logo img {
   width: 100%;
   height: auto;
+  max-height: 240px;
+  object-fit: contain;
 }
 
 @media (max-width: 900px) {
@@ -302,9 +307,14 @@ p {
   }
 
   .hero-logo {
-    max-width: 260px;
+    max-width: 220px;
+    padding: 20px;
     margin: 0 auto;
     order: -1;
+  }
+
+  .hero-logo img {
+    max-height: 180px;
   }
 }
 
@@ -657,9 +667,11 @@ section {
   flex-shrink: 0;
 }
 
-.brand-logo {
+.brand .brand-logo {
   height: 46px;
+  max-height: 46px;
   width: auto;
+  max-width: none;
   background: #fff;
   border-radius: 10px;
   padding: 4px 8px;
