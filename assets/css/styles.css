@@ -275,6 +275,39 @@ p {
   max-width: 720px;
 }
 
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-logo {
+  background: #fff;
+  border-radius: 28px;
+  padding: 36px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(23, 195, 178, 0.15);
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    max-width: 260px;
+    margin: 0 auto;
+    order: -1;
+  }
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -614,18 +647,27 @@ section {
 }
 
 .member-avatar {
-  width: 58px;
-  height: 58px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--navy-700), var(--violet-500));
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.15rem;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 4px solid var(--bg-alt);
+  box-shadow: var(--shadow-sm);
   flex-shrink: 0;
+}
+
+.brand-logo {
+  height: 46px;
+  width: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 4px 8px;
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.5);
+}
+
+.footer-brand .brand-logo {
+  height: 60px;
 }
 
 .member-card h3 {
@@ -650,6 +692,23 @@ section {
 
 .member-card.member-lead {
   border-left: 4px solid var(--teal-500);
+}
+
+.cv-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--teal-500);
+  color: var(--teal-500);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cv-link:hover {
+  background: var(--teal-500);
+  color: #fff;
 }
 
 .group-title {
@@ -976,6 +1035,21 @@ section {
 
 .form-success.is-visible {
   display: block;
+}
+
+.form-highlight {
+  background: #fff6c2;
+  border: 1px solid #f2d857;
+  color: var(--text);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  margin: 0 0 22px;
+}
+
+.form-highlight strong {
+  font-weight: 700;
+  color: var(--navy-800);
 }
 
 /* ---------------------------------------------------------

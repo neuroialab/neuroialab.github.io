@@ -6,7 +6,7 @@ El sitio combina dos fuentes: el contenido público scrapeado del sitio anterior
 
 - Se agregó la página **Líneas de Investigación** (`lineas-de-investigacion.html`) con las 3 líneas del laboratorio y sus proyectos asociados.
 - `proyectos.html` se actualizó con los 9 proyectos con ficha completa (estado real, responsables, fechas, objetivos, protocolos de ética aprobados) más PROY-NEUROIA-003 (completado, no detallado en el PDF de "proyectos en marcha").
-- `miembros.html` incorpora a **Juan Acosta** y **Martina Sánchez**, que no figuraban en el sitio de Google Sites.
+- Fotos reales de Lucas Baldezzari, Graciela Salum, Emiliano Alvarez, Victoria Maneiro y Agustín Quintana en `miembros.html`, y logo oficial (`assets/img/logo.png`) en cabecera, pie y hero.
 - Se agregó un bloque de **herramientas/repositorios** (`neuroiatools`, `pyhiamp`, `pyhwr`, `neuroialab-organization`) en la página de líneas de investigación.
 
 ## 2. Algo que necesito que confirmes
@@ -17,8 +17,7 @@ El sitio combina dos fuentes: el contenido público scrapeado del sitio anterior
 
 ## 3. Contenido a confirmar o corregir
 
-- **Miembros**: faltan fotos de perfil (uso iniciales como placeholder).
-- **Redes sociales**: sigo usando `instagram.com/neuroialab` y `github.com/neuroialaborg`. Si tienen LinkedIn, X/Twitter o YouTube, decime los links.
+- **Fotos de miembros**: la de Victoria Maneiro pesa ~5.5 MB (6000×4000). Conviene redimensionarla a ~800px de ancho antes de publicar para que la página cargue rápido.- **Redes sociales**: sigo usando `instagram.com/neuroialab` y `github.com/neuroialaborg`. Si tienen LinkedIn, X/Twitter o YouTube, decime los links.
 - Los PDFs no traen fechas para PROY-NEUROIA-003, 006, 007 y 010 (algunas dicen "A definir"); si las tenés, las agrego.
 
 ## 4. Recursos visuales
@@ -29,7 +28,7 @@ El sitio combina dos fuentes: el contenido público scrapeado del sitio anterior
 
 ## 5. Formulario de contacto
 
-Sigue siendo solo `mailto:` (sin backend, sin registro de envíos). Opciones: **Formspree**/**Netlify Forms**, o embeber el Google Form de reclutamiento de participantes si querés mantenerlo (pasame el link).
+El formulario abre el cliente de correo del visitante con el mensaje pre-completado hacia `neuroialab@utec.edu.uy`, y arriba del formulario hay un aviso destacado invitando a escribir directamente a ese correo. Si más adelante quieren que el mensaje se envíe sin abrir el cliente de correo, hay que integrar un servicio externo (por ejemplo Google Apps Script o Formspree).
 
 ## 6. Publicaciones y difusión
 
